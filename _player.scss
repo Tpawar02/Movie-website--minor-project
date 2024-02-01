@@ -1,0 +1,36 @@
+.player {
+    display: none;
+    position: fixed;
+    z-index: 8;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: $dark;
+
+    .player-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: $primary;
+        font-size: 40px;
+        cursor: pointer;
+        transition: all .3s ease;
+        &:hover {
+            transform: rotate(360deg);
+        }
+    }
+
+    #video {
+        display: flex;
+        align-items: 100%;
+        justify-content: center;
+        height: 100%;
+
+        h3{
+            font-size: 26px;
+        }
+        
+    }
+
+}
